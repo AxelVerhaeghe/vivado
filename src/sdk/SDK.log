@@ -1,0 +1,173 @@
+14:50:03 INFO  : Processing command line option -hwspec /volume1/scratch/rdeclerc/repos/digital_platforms/hw/work-packages/sw/montgomery_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+14:50:05 INFO  : Launching XSDB server: xsdb -n -s /esat/koninck1/scratch/pmaene/Cellar/xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:50:07 INFO  : XSDB server has started successfully.
+14:51:01 INFO  : System reset is completed.
+14:51:03 INFO  : FPGA configured successfully with bitstream "/volume1/scratch/rdeclerc/repos/digital_platforms/hw/work-packages/sw/montgomery_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+14:51:04 INFO  : ps7_init is completed.
+14:51:04 INFO  : ps7_post_config is completed.
+14:51:14 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:52:29 INFO  : Launching XSDB server: xsdb -n -s /esat/koninck1/scratch/pmaene/Cellar/xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+14:52:30 INFO  : Processing command line option -hwspec /volume1/scratch/rdeclerc/repos/digital_platforms/hw/work-packages/sw/montgomery_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+14:52:30 INFO  : XSDB server has started successfully.
+14:52:31 INFO  : Checking for hwspec changes in the project montgomery_sw_project_wrapper_hw_platform_0.
+14:52:45 INFO  : System reset is completed.
+14:52:47 INFO  : FPGA configured successfully with bitstream "/volume1/scratch/rdeclerc/repos/digital_platforms/hw/work-packages/sw/montgomery_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+14:52:47 INFO  : ps7_init is completed.
+14:52:47 INFO  : ps7_post_config is completed.
+14:52:51 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:59:01 INFO  : Launching XSDB server: xsdb -n -s /esat/koninck1/scratch/pmaene/Cellar/xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+15:59:04 INFO  : Processing command line option -hwspec /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+15:59:04 INFO  : XSDB server has started successfully.
+16:01:47 INFO  : System reset is completed.
+16:01:49 INFO  : FPGA configured successfully with bitstream "/users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+16:01:49 INFO  : ps7_init is completed.
+16:01:49 INFO  : ps7_post_config is completed.
+16:03:58 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:09:59 INFO  : Launching XSDB server: xsdb -n -s /esat/koninck1/scratch/pmaene/Cellar/xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+16:10:01 INFO  : XSDB server has started successfully.
+16:10:01 INFO  : Processing command line option -hwspec /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+16:10:02 INFO  : Checking for hwspec changes in the project montgomery_sw_project_wrapper_hw_platform_1.
+16:10:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1471615639000,  Project:1470653625000
+16:10:06 INFO  : The hardware specification for project 'montgomery_sw_project_wrapper_hw_platform_1' is different from /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+16:10:08 INFO  : Copied contents of /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf into /montgomery_sw_project_wrapper_hw_platform_1/system.hdf.
+16:10:14 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:10:15 INFO  : Clearing existing target manager status.
+16:10:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:10:18 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+16:10:23 INFO  : System reset is completed.
+16:10:25 INFO  : FPGA configured successfully with bitstream "/users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+16:10:25 INFO  : ps7_init is completed.
+16:10:25 INFO  : ps7_post_config is completed.
+16:10:39 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:10:39 INFO  : Launching XSDB server: xsdb -n -interactive /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/temp_xsdb_launch_script.tcl
+15:10:41 INFO  : XSDB server has started successfully.
+15:10:45 INFO  : Processing command line option -hwspec /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+15:10:45 INFO  : Checking for hwspec changes in the project montgomery_sw_project_wrapper_hw_platform_1.
+15:10:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1474981719000,  Project:1471615639000
+15:10:49 INFO  : The hardware specification for project 'montgomery_sw_project_wrapper_hw_platform_1' is different from /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+15:10:49 INFO  : Copied contents of /users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf into /montgomery_sw_project_wrapper_hw_platform_1/system.hdf.
+15:10:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:10:54 INFO  : Clearing existing target manager status.
+15:10:56 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:10:56 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:12:21 INFO  : System reset is completed.
+15:12:22 INFO  : FPGA configured successfully with bitstream "/users/cosic/rdeclerc/Documents/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+15:12:23 INFO  : ps7_init is completed.
+15:12:23 INFO  : ps7_post_config is completed.
+15:12:56 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:40:24 INFO  : Launching XSDB server: xsdb -n -interactive /users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/temp_xsdb_launch_script.tcl
+11:40:26 INFO  : XSDB server has started successfully.
+11:40:30 INFO  : Processing command line option -hwspec /users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+11:52:02 INFO  : System reset is completed.
+11:52:04 INFO  : FPGA configured successfully with bitstream "/users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+11:52:04 INFO  : ps7_init is completed.
+11:52:04 INFO  : ps7_post_config is completed.
+11:57:31 INFO  : System reset is completed.
+11:57:33 INFO  : FPGA configured successfully with bitstream "/users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+11:57:33 INFO  : ps7_init is completed.
+11:57:34 INFO  : ps7_post_config is completed.
+11:59:59 INFO  : System reset is completed.
+12:00:01 INFO  : FPGA configured successfully with bitstream "/users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+12:00:01 INFO  : ps7_init is completed.
+12:00:01 INFO  : ps7_post_config is completed.
+12:00:10 INFO  : System reset is completed.
+12:00:12 INFO  : FPGA configured successfully with bitstream "/users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+12:00:12 INFO  : ps7_init is completed.
+12:00:12 INFO  : ps7_post_config is completed.
+12:00:22 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:00:36 INFO  : Launching XSDB server: xsdb -n -interactive /users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/temp_xsdb_launch_script.tcl
+12:00:37 INFO  : XSDB server has started successfully.
+12:00:38 INFO  : Processing command line option -hwspec /users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+12:00:39 INFO  : Checking for hwspec changes in the project montgomery_sw_project_wrapper_hw_platform_2.
+12:03:22 INFO  : System reset is completed.
+12:03:24 INFO  : FPGA configured successfully with bitstream "/users/cosic/abeckers/ddp/2016-2017/work-packages/sw/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/montgomery_sw_project_wrapper.bit"
+12:03:24 INFO  : ps7_init is completed.
+12:03:24 INFO  : ps7_post_config is completed.
+12:04:15 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:47:45 INFO  : Launching XSDB server: xsdb -n -interactive /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/temp_xsdb_launch_script.tcl
+17:47:47 INFO  : XSDB server has started successfully.
+17:47:49 INFO  : Processing command line option -hwspec /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf.
+17:49:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655166A" && level==0} -index 1' command is executed.
+17:49:08 INFO  : 'fpga -state' command is executed.
+17:49:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:49:16 INFO  : Jtag cable 'Digilent Zybo 210279655166A' is selected.
+17:49:16 INFO  : 'jtag frequency' command is executed.
+17:49:16 INFO  : Sourcing of '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:49:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0' command is executed.
+17:49:16 INFO  : Hardware design information is loaded from '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/system.hdf'.
+17:49:16 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0' command is executed.
+17:49:16 INFO  : 'stop' command is executed.
+17:49:16 INFO  : 'ps7_init' command is executed.
+17:49:16 INFO  : 'ps7_post_config' command is executed.
+17:49:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:49:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:49:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:49:17 INFO  : The application '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project/Debug/montgomery_sw_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:49:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+loadhw /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+dow /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project/Debug/montgomery_sw_project.elf
+----------------End of Script----------------
+
+17:49:17 INFO  : Memory regions updated for context APU
+17:49:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:49:17 INFO  : 'con' command is executed.
+17:49:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+con
+----------------End of Script----------------
+
+17:49:17 INFO  : Launch script is exported to file '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local_montgomery_sw_project.elf.tcl'
+17:53:43 INFO  : Disconnected from the channel tcfchan#1.
+17:53:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655166A" && level==0} -index 1' command is executed.
+17:53:43 INFO  : 'fpga -state' command is executed.
+17:54:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279655166A" && level==0} -index 1' command is executed.
+17:54:02 INFO  : 'fpga -state' command is executed.
+17:54:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:54:04 INFO  : Jtag cable 'Digilent Zybo 210279655166A' is selected.
+17:54:04 INFO  : 'jtag frequency' command is executed.
+17:54:04 INFO  : Sourcing of '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:54:04 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0' command is executed.
+17:54:07 INFO  : Hardware design information is loaded from '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/system.hdf'.
+17:54:07 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0' command is executed.
+17:54:07 INFO  : 'stop' command is executed.
+17:54:08 INFO  : 'ps7_init' command is executed.
+17:54:08 INFO  : 'ps7_post_config' command is executed.
+17:54:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:54:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:54:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:54:08 INFO  : The application '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project/Debug/montgomery_sw_project.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:54:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+loadhw /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+dow /users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/montgomery_sw_project/Debug/montgomery_sw_project.elf
+----------------End of Script----------------
+
+17:54:08 INFO  : Memory regions updated for context APU
+17:54:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:54:08 INFO  : 'con' command is executed.
+17:54:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279655166A"} -index 0
+con
+----------------End of Script----------------
+
+17:54:08 INFO  : Launch script is exported to file '/users/start2015/r0486429/Documents/DDP/exsession1/ddp_sw/src/sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_on_local_montgomery_sw_project.elf.tcl'
+17:59:50 INFO  : Disconnected from the channel tcfchan#2.
