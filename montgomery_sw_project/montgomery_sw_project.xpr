@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="/users/start2015/r0486429/Documents/DDP/exsession2/ddp_sw/montgomery_sw_project/montgomery_sw_project.xpr">
+<Project Version="7" Minor="14" Path="/users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5dd7308b9e2048b898c74d445e9ba5a9"/>

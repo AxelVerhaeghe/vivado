@@ -1,0 +1,129 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+Process ID: 11691
+
+Current time: 	10/18/17 4:27:47 PM CEST
+Time zone: 	Central European Time (Europe/Brussels)
+
+OS: CentOS Linux release 7.4.1708 (Core) 
+Version: 3.10.0-693.2.2.el7.x86_64
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/tps/lnx64/jre
+
+User name: 	r0486429
+User home directory: /users/start2015/r0486429
+User working directory: /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado
+RDI Data directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data
+RDI Bin directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/bin
+
+Vivado preferences path: /users/start2015/r0486429/.Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: /users/start2015/r0486429/.Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,890 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: montgomery_sw_project/montgomery_sw_project.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// [GUI Memory]: 37 MB (+35803kb) [00:00:03]
+// [Engine Memory]: 4,869 MB (+4954147kb) [00:00:03]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project montgomery_sw_project/montgomery_sw_project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,922 MB. GUI used memory: 22 MB. Current time: 10/18/17 4:27:49 PM CEST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 53 MB (+15359kb) [00:00:08]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project montgomery_sw_project/montgomery_sw_project.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/users/start2015/r0486429/Documents/DDP/exsession2/ddp_sw/montgomery_sw_project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+4823kb) [00:00:10]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: montgomery_sw_project; location: /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 5968.738 ; gain = 131.086 ; free physical = 3087 ; free virtual = 22281 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 64 MB (+621kb) [00:03:06]
+// [GUI Memory]: 68 MB (+700kb) [00:28:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,001 MB. GUI used memory: 29 MB. Current time: 10/18/17 4:57:49 PM CEST
+// Elapsed time: 2334 seconds
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// ai:x (cv:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ai:x)
+dismissDialog("Launch SDK"); // ai:x (cv:JFrame)
+// Tcl Message: launch_sdk -workspace /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk -hwspec /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk -hwspec /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,010 MB. GUI used memory: 28 MB. Current time: 10/18/17 5:27:49 PM CEST
