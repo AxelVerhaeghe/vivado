@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Oct 26 16:14:29 2017
-# Process ID: 2426
+# Start of session at: Thu Oct 26 10:39:40 2017
+# Process ID: 2416
 # Current directory: /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software
 # Command line: vivado montgomery_sw_project/montgomery_sw_project.xpr -tempDir /tmp
 # Log file: /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/vivado.log
@@ -22,9 +22,15 @@ WARNING: [IP_Flow 19-2207] Repository '/users/start2015/r0486429/Documents/DDP/D
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/src/ip_repo'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 5970.805 ; gain = 134.043 ; free physical = 5270 ; free virtual = 22877
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 5972.090 ; gain = 131.891 ; free physical = 4697 ; free virtual = 22555
 update_compile_order -fileset sources_1
 launch_sdk -workspace /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk -hwspec /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
 INFO: [Vivado 12-417] Running xsdk -workspace /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk -hwspec /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk -hwspec /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk -hwspec /users/start2015/r0486429/Documents/DDP/DDP-software/DDP-software/montgomery_sw_project/montgomery_sw_project.sdk/montgomery_sw_project_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 26 13:08:26 2017...
