@@ -1,0 +1,332 @@
+15:36:44 **** Build of project Drone_dual_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_1/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_1/libsrc/qspips_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_1/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/gpio_v4_1/src
+make -C ps7_cortexa9_1/libsrc/gpio_v4_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_2/src
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/sdps_v2_8/src
+make -C ps7_cortexa9_1/libsrc/sdps_v2_8/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/emacps_v3_2/src
+make -C ps7_cortexa9_1/libsrc/emacps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_1/libsrc/uartps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/vtc_v7_1/src
+make -C ps7_cortexa9_1/libsrc/vtc_v7_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/scugic_v3_3/src
+make -C ps7_cortexa9_1/libsrc/scugic_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/axidma_v9_2/src
+make -C ps7_cortexa9_1/libsrc/axidma_v9_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/RC_v1_0/src
+make -C ps7_cortexa9_1/libsrc/RC_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/iicps_v3_2/src
+make -C ps7_cortexa9_1/libsrc/iicps_v3_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/devcfg_v3_4/src
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/dmaps_v2_1/src
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/gpiops_v3_1/src
+make -C ps7_cortexa9_1/libsrc/gpiops_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/axivdma_v6_1/src
+make -C ps7_cortexa9_1/libsrc/axivdma_v6_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/ttcps_v3_1/src
+make -C ps7_cortexa9_1/libsrc/ttcps_v3_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/standalone_v5_5/src
+make -C ps7_cortexa9_1/libsrc/standalone_v5_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_1/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make include in ps7_cortexa9_1/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Running Make libs in ps7_cortexa9_1/libsrc/qspips_v3_3/src
+make -C ps7_cortexa9_1/libsrc/qspips_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Compiling qspips
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xqspips.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xqspips_hw.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xqspips_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xqspips_sinit.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/ddrps_v1_0/src
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xqspips_g.o] Error 1
+make -C ps7_cortexa9_1/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling ddrps
+make[1]: *** [xqspips_options.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/gpio_v4_1/src
+make[1]: Target `libs' not remade because of errors.
+make -C ps7_cortexa9_1/libsrc/gpio_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make: *** [ps7_cortexa9_1/libsrc/qspips_v3_3/src/make.libs] Error 2
+Compiling gpio
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [libs] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_2/src
+make: *** [ps7_cortexa9_1/libsrc/gpio_v4_1/src/make.libs] Error 2
+make -C ps7_cortexa9_1/libsrc/cpu_cortexa9_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_1/libsrc/sdps_v2_8/src
+make[1]: *** [xsdps_sinit.o] Error 1
+make -C ps7_cortexa9_1/libsrc/sdps_v2_8/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xsdps_g.o] Error 1
+Compiling sdps
+Running Make libs in ps7_cortexa9_1/libsrc/emacps_v3_2/src
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make -C ps7_cortexa9_1/libsrc/emacps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make[1]: *** [xsdps.o] Error 1
+Compiling emacps
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/uartps_v3_1/src
+make -C ps7_cortexa9_1/libsrc/uartps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Compiling uartps
+make[1]: *** [xsdps_options.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/sdps_v2_8/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/vtc_v7_1/src
+make[1]: *** [xemacps_intr.o] Error 1
+make -C ps7_cortexa9_1/libsrc/vtc_v7_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling video timing controller
+make[1]: *** [xemacps_bdring.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/scugic_v3_3/src
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make -C ps7_cortexa9_1/libsrc/scugic_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make[1]: *** [xemacps_control.o] Error 1
+Compiling scugic
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xemacps_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xemacps_hw.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xemacps.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/axidma_v9_2/src
+make[1]: *** [xemacps_g.o] Error 1
+make -C ps7_cortexa9_1/libsrc/axidma_v9_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Compiling axidma
+make[1]: Target `libs' not remade because of errors.
+Running Make libs in ps7_cortexa9_1/libsrc/RC_v1_0/src
+make: *** [ps7_cortexa9_1/libsrc/emacps_v3_2/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make -C ps7_cortexa9_1/libsrc/RC_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make[1]: *** [xuartps_g.o] Error 1
+Compiling RC...
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xuartps_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/iicps_v3_2/src
+make -C ps7_cortexa9_1/libsrc/iicps_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make[1]: *** [xuartps.o] Error 1
+Compiling iicps
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xuartps_hw.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xuartps_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xuartps_options.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/devcfg_v3_4/src
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make -C ps7_cortexa9_1/libsrc/devcfg_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Compiling devcfg
+make[1]: *** [xuartps_intr.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/uartps_v3_1/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [libs] Error 1
+make: *** [ps7_cortexa9_1/libsrc/vtc_v7_1/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscugic_selftest.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/dmaps_v2_1/src
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make -C ps7_cortexa9_1/libsrc/dmaps_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make[1]: *** [xscugic_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling dmaps
+make[1]: *** [xscugic_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscugic.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/gpiops_v3_1/src
+make[1]: *** [xscugic_hw.o] Error 1
+make -C ps7_cortexa9_1/libsrc/gpiops_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling gpiops
+make[1]: *** [xscugic_intr.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/scugic_v3_3/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [libs] Error 1
+make: *** [ps7_cortexa9_1/libsrc/axidma_v9_2/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/scuwdt_v2_1/src
+make[1]: *** [libs] Error 1
+make: *** [ps7_cortexa9_1/libsrc/RC_v1_0/src/make.libs] Error 2
+make -C ps7_cortexa9_1/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling scuwdt
+make[1]: *** [xiicps.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xiicps_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/axivdma_v6_1/src
+make[1]: *** [xiicps_options.o] Error 1
+make -C ps7_cortexa9_1/libsrc/axivdma_v6_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xiicps_slave.o] Error 1
+Compiling axivdma
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xiicps_hw.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/xadcps_v2_2/src
+make[1]: *** [xiicps_master.o] Error 1
+make -C ps7_cortexa9_1/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling xadcps
+make[1]: *** [xiicps_intr.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/ttcps_v3_1/src
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xiicps_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xiicps_sinit.o] Error 1
+make -C ps7_cortexa9_1/libsrc/ttcps_v3_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make[1]: Target `libs' not remade because of errors.
+Compiling ttcps
+make: *** [ps7_cortexa9_1/libsrc/iicps_v3_2/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xdevcfg.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xdevcfg_intr.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/coresightps_dcc_v1_2/src
+make -C ps7_cortexa9_1/libsrc/coresightps_dcc_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling coresightps_dcc
+make[1]: *** [xdevcfg_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xdevcfg_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xdevcfg_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/standalone_v5_5/src
+make -C ps7_cortexa9_1/libsrc/standalone_v5_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+Compiling standalone
+make[1]: *** [xdevcfg_hw.o] Error 1
+Running Make libs in ps7_cortexa9_1/libsrc/usbps_v2_4/src
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/devcfg_v3_4/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make -C ps7_cortexa9_1/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+make[1]: *** [xdmaps_hw.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling usbps
+make[1]: *** [xdmaps_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xdmaps_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Running Make libs in ps7_cortexa9_1/libsrc/scutimer_v2_1/src
+make[1]: *** [xdmaps_sinit.o] Error 1
+make -C ps7_cortexa9_1/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -DUSE AMP=1."
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+Compiling scutimer
+make[1]: *** [xdmaps.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/dmaps_v2_1/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xgpiops_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xgpiops_intr.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xgpiops.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xgpiops_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xgpiops_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xgpiops_hw.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/gpiops_v3_1/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscuwdt.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscuwdt_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscuwdt_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscuwdt_g.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/scuwdt_v2_1/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [libs] Error 1
+make: *** [ps7_cortexa9_1/libsrc/axivdma_v6_1/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xadcps_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xadcps_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xadcps_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xadcps.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xadcps_intr.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/xadcps_v2_2/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xttcps_options.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xttcps_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xttcps_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xttcps_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xttcps.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/ttcps_v3_1/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xcoresightpsdcc.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/coresightps_dcc_v1_2/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [standalone_libs] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/standalone_v5_5/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xusbps_hw.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xusbps_intr.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xusbps_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xusbps_endpoint.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xusbps.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xusbps_g.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/usbps_v2_4/src/make.libs] Error 2
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscutimer_g.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscutimer_selftest.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscutimer_sinit.o] Error 1
+arm-none-eabi-gcc: error: AMP=1.: No such file or directory
+make[1]: *** [xscutimer.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [ps7_cortexa9_1/libsrc/scutimer_v2_1/src/make.libs] Error 2
+make: Target `all' not remade because of errors.
+
+15:36:46 Build Finished (took 2s.243ms)
+

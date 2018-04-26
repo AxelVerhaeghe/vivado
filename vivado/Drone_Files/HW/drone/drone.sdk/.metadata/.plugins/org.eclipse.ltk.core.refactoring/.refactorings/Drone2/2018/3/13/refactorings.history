@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Drone2/src/EAGLE4/c_code/voltage_to_control&apos; to &apos;voltage_to_control.c&apos;" description="Rename resource &apos;voltage_to_control&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/EAGLE4/c_code/voltage_to_control" name="voltage_to_control.c" stamp="1522156035268" updateReferences="true"/>
+</session>

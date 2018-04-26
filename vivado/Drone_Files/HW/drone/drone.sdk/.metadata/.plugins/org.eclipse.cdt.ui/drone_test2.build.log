@@ -1,0 +1,8 @@
+16:28:36 **** Auto Build of configuration Debug for project drone_test2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for `main-build'.
+
+16:28:36 Build Finished (took 120ms)
+

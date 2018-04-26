@@ -1,0 +1,149 @@
+15:36:41 **** Build of configuration Debug for project Drone ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/utils/input_bias.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utils/input_bias.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utils/input_bias.d" -MT"src/utils/input_bias.o" -o "src/utils/input_bias.o" "../src/utils/input_bias.c"
+Finished building: ../src/utils/input_bias.c
+ 
+Building file: ../src/utils/median_filter.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utils/median_filter.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utils/median_filter.d" -MT"src/utils/median_filter.o" -o "src/utils/median_filter.o" "../src/utils/median_filter.c"
+Finished building: ../src/utils/median_filter.c
+ 
+Building file: ../src/sonar/sonar.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sonar/sonar.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sonar/sonar.d" -MT"src/sonar/sonar.o" -o "src/sonar/sonar.o" "../src/sonar/sonar.c"
+Finished building: ../src/sonar/sonar.c
+ 
+Building file: ../src/platform/eagle_ipc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/eagle_ipc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform/eagle_ipc.d" -MT"src/platform/eagle_ipc.o" -o "src/platform/eagle_ipc.o" "../src/platform/eagle_ipc.c"
+Finished building: ../src/platform/eagle_ipc.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/intc/intc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/intc/intc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/intc/intc.d" -MT"src/intc/intc.o" -o "src/intc/intc.o" "../src/intc/intc.c"
+Finished building: ../src/intc/intc.c
+ 
+Building file: ../src/fsm/fsm.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fsm/fsm.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsm/fsm.d" -MT"src/fsm/fsm.o" -o "src/fsm/fsm.o" "../src/fsm/fsm.c"
+Finished building: ../src/fsm/fsm.c
+ 
+Building file: ../src/control/altitude.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/altitude.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/control/altitude.d" -MT"src/control/altitude.o" -o "src/control/altitude.o" "../src/control/altitude.c"
+Finished building: ../src/control/altitude.c
+ 
+Building file: ../src/control/attitude.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/attitude.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/control/attitude.d" -MT"src/control/attitude.o" -o "src/control/attitude.o" "../src/control/attitude.c"
+Finished building: ../src/control/attitude.c
+ 
+Building file: ../src/control/navigation.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/control/navigation.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/control/navigation.d" -MT"src/control/navigation.o" -o "src/control/navigation.o" "../src/control/navigation.c"
+../src/control/navigation.c: In function 'correct_tilt_pos':
+../src/control/navigation.c:36:9: warning: unused variable 'pz_err' [-Wunused-variable]
+   float pz_err = sonar;
+         ^
+Finished building: ../src/control/navigation.c
+ 
+Building file: ../src/comm/comm.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/comm/comm.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/comm/comm.d" -MT"src/comm/comm.o" -o "src/comm/comm.o" "../src/comm/comm.c"
+../src/comm/comm.c: In function 'log_mode':
+../src/comm/comm.c:26:19: warning: initialization from incompatible pointer type
+   int *nav_mode = (float *)MODE_FLAG;
+                   ^
+../src/comm/comm.c:27:19: warning: initialization from incompatible pointer type
+   int *ind_mode = (float *)IND_FLAG;
+                   ^
+Finished building: ../src/comm/comm.c
+ 
+Building file: ../src/comm/iic.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/comm/iic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/comm/iic.d" -MT"src/comm/iic.o" -o "src/comm/iic.o" "../src/comm/iic.c"
+Finished building: ../src/comm/iic.c
+ 
+Building file: ../src/RC/RC.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RC/RC.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/RC/RC.d" -MT"src/RC/RC.o" -o "src/RC/RC.o" "../src/RC/RC.c"
+Finished building: ../src/RC/RC.c
+ 
+Building file: ../src/PWM/PWM.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PWM/PWM.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/PWM/PWM.d" -MT"src/PWM/PWM.o" -o "src/PWM/PWM.o" "../src/PWM/PWM.c"
+Finished building: ../src/PWM/PWM.c
+ 
+Building file: ../src/IMU/IMU.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IMU/IMU.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/IMU/IMU.d" -MT"src/IMU/IMU.o" -o "src/IMU/IMU.o" "../src/IMU/IMU.c"
+Finished building: ../src/IMU/IMU.c
+ 
+Building file: ../src/EAGLE4/c_code/control_to_voltage.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/EAGLE4/c_code/control_to_voltage.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/EAGLE4/c_code/control_to_voltage.d" -MT"src/EAGLE4/c_code/control_to_voltage.o" -o "src/EAGLE4/c_code/control_to_voltage.o" "../src/EAGLE4/c_code/control_to_voltage.c"
+Finished building: ../src/EAGLE4/c_code/control_to_voltage.c
+ 
+Building file: ../src/EAGLE4/attitude_controller/attitude_controller.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/EAGLE4/attitude_controller/attitude_controller.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/EAGLE4/attitude_controller/attitude_controller.d" -MT"src/EAGLE4/attitude_controller/attitude_controller.o" -o "src/EAGLE4/attitude_controller/attitude_controller.o" "../src/EAGLE4/attitude_controller/attitude_controller.c"
+Finished building: ../src/EAGLE4/attitude_controller/attitude_controller.c
+ 
+Building file: ../src/EAGLE4/attitude_controller/attitude_reference.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/EAGLE4/attitude_controller/attitude_reference.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/EAGLE4/attitude_controller/attitude_reference.d" -MT"src/EAGLE4/attitude_controller/attitude_reference.o" -o "src/EAGLE4/attitude_controller/attitude_reference.o" "../src/EAGLE4/attitude_controller/attitude_reference.c"
+Finished building: ../src/EAGLE4/attitude_controller/attitude_reference.c
+ 
+Building file: ../src/EAGLE4/attitude_controller/imu_measurements.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/EAGLE4/attitude_controller/imu_measurements.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/EAGLE4/attitude_controller/imu_measurements.d" -MT"src/EAGLE4/attitude_controller/imu_measurements.o" -o "src/EAGLE4/attitude_controller/imu_measurements.o" "../src/EAGLE4/attitude_controller/imu_measurements.c"
+Finished building: ../src/EAGLE4/attitude_controller/imu_measurements.c
+ 
+Building file: ../src/EAGLE4/altitude_controller/altitude_controller.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/EAGLE4/altitude_controller/altitude_controller.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/EAGLE4/altitude_controller/altitude_controller.d" -MT"src/EAGLE4/altitude_controller/altitude_controller.o" -o "src/EAGLE4/altitude_controller/altitude_controller.o" "../src/EAGLE4/altitude_controller/altitude_controller.c"
+Finished building: ../src/EAGLE4/altitude_controller/altitude_controller.c
+ 
+Building file: ../src/EAGLE4/altitude_controller/altitude_integral_action.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/EAGLE4/altitude_controller/altitude_integral_action.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/EAGLE4/altitude_controller/altitude_integral_action.d" -MT"src/EAGLE4/altitude_controller/altitude_integral_action.o" -o "src/EAGLE4/altitude_controller/altitude_integral_action.o" "../src/EAGLE4/altitude_controller/altitude_integral_action.c"
+Finished building: ../src/EAGLE4/altitude_controller/altitude_integral_action.c
+ 
+Building file: ../src/EAGLE4/altitude_controller/altitude_reference.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/EAGLE4/altitude_controller/altitude_reference.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/EAGLE4/altitude_controller/altitude_reference.d" -MT"src/EAGLE4/altitude_controller/altitude_reference.o" -o "src/EAGLE4/altitude_controller/altitude_reference.o" "../src/EAGLE4/altitude_controller/altitude_reference.c"
+Finished building: ../src/EAGLE4/altitude_controller/altitude_reference.c
+ 
+Building file: ../src/AHRS/ahrs.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AHRS/ahrs.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/AHRS/ahrs.d" -MT"src/AHRS/ahrs.o" -o "src/AHRS/ahrs.o" "../src/AHRS/ahrs.c"
+Finished building: ../src/AHRS/ahrs.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Drone_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Drone.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Drone_bsp/ps7_cortexa9_0/lib -o "Drone.elf"  ./src/utils/input_bias.o ./src/utils/median_filter.o ./src/utils/quaternion.o  ./src/sonar/sonar.o  ./src/platform/eagle_ipc.o ./src/platform/platform.o  ./src/intc/intc.o  ./src/fsm/fsm.o  ./src/control/altitude.o ./src/control/attitude.o ./src/control/navigation.o  ./src/comm/comm.o ./src/comm/iic.o  ./src/RC/RC.o  ./src/PWM/PWM.o  ./src/IMU/IMU.o  ./src/EAGLE4/c_code/control_to_voltage.o  ./src/EAGLE4/attitude_controller/attitude_controller.o ./src/EAGLE4/attitude_controller/attitude_reference.o ./src/EAGLE4/attitude_controller/imu_measurements.o  ./src/EAGLE4/altitude_controller/altitude_controller.o ./src/EAGLE4/altitude_controller/altitude_integral_action.o ./src/EAGLE4/altitude_controller/altitude_reference.o  ./src/AHRS/ahrs.o  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Drone.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Drone.elf  |tee "Drone.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 128880	   4328	  24412	 157620	  267b4	Drone.elf
+Finished building: Drone.elf.size
+ 
+
+15:36:44 Build Finished (took 3s.29ms)
+

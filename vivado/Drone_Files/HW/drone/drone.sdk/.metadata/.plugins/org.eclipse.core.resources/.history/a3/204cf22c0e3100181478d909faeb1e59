@@ -1,0 +1,37 @@
+#include "EAGLE4.h"
+#include <math.h>
+
+/** Defining static variables */
+int mat[7][10]
+/**
+* Call this before taking off.
+*/
+void init_logging_system(void)
+	for(i = 0; i < 7; ++i)
+        for(j = 0; j < 10 ; ++j) 
+        {
+            mat[i][j]= 0.0;
+        }
+/** Logging system: First we write the write the data in collumn [5] in to collumn [6]. 
+ * Then we write the data from collumn [5] in to collumn [4] and so on.
+ * When we reach [0] we write the new data in the first collumn of mat. 
+ * We lose the data of collumn [6] beacause we don't need it anymore.
+*/
+void logging_system(void){
+    
+       for (i = 0 ; i< 10; ++i)
+        for (j = 6; j > 0; --j)
+        {
+            mat[i][j]= mat[i][j-1];
+        }
+    mat[0][0]= get_x()
+    mat[1][0]= get_y()
+    mat[2][0]= get_sonar_measurements();
+    mat[3][0]= get_imu_measurements_reduced()[0];
+    mat[4][0]= get_imu_measurements_reduced()[1];
+    mat[5][0]= get_imu_measurements_reduced()[2];
+    mat[6][0]= get_imu_measurements_reduced()[3];
+    mat[7][0]= get_imu_measurements_reduced()[4];
+    mat[8][0]= get_imu_measurements_reduced()[5];
+    mat[9][0]= 0.0
+}

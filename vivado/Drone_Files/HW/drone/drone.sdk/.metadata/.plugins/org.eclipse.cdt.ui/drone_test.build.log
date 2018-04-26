@@ -1,0 +1,18 @@
+16:08:11 **** Auto Build of configuration Debug for project drone_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/utils/input_bias.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utils/input_bias.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../drone_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utils/input_bias.d" -MT"src/utils/input_bias.o" -o "src/utils/input_bias.o" "../src/utils/input_bias.c"
+In file included from ../src/utils/../main.h:39:0,
+                 from ../src/utils/input_bias.h:11,
+                 from ../src/utils/input_bias.c:7:
+../src/utils/../control/attitude.h:13:30: fatal error: ../EAGLE4/EAGLE4.h: No such file or directory
+ #include "../EAGLE4/EAGLE4.h"
+                              ^
+compilation terminated.
+make: *** [src/utils/input_bias.o] Error 1
+
+16:08:11 Build Finished (took 176ms)
+

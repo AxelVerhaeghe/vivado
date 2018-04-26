@@ -1,0 +1,6 @@
+17:04:18 **** Build of project drone_test2_bsp ****
+make -k all 
+make: *** No rule to make target `all'.
+
+17:04:19 Build Finished (took 62ms)
+

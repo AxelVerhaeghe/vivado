@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/FSBL/Debug/FSBL.elf
+	/users/students/data/eagle_repository/Drone_Files/BareMetal_SW/u-boot.elf
+	/users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone_wrapper_hw_platform_6/drone_wrapper.bit
+	/users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/Autopilot/Debug/Autopilot.elf
+}

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Mar 24 16:57:39 2018
+# Process ID: 5997
+# Current directory: /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone
+# Command line: vivado
+# Log file: /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/vivado.log
+# Journal file: /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/vivado.jou
+#-----------------------------------------------------------
+couldn't load file "librdi_tcltasks.so": librdi_device.so: failed to map segment from shared object: Cannot allocate memory
+Could not load library 'librdi_tcltasks' needed by 'core', please check installation.
+    while executing
+"error "$result\nCould not load library '$library' needed by '$feature', please check installation.""
+    (procedure "rdi::load_library" line 4)
+    invoked from within
+"rdi::load_library core librdi_tcltasks"
+    (file "/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/lib/scripts/rdi/features/core/core.tcl" line 5)
+ERROR: [Common 17-217] Failed to load feature 'core'.
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 24 16:57:40 2018...

@@ -1,0 +1,89 @@
+#include "../EAGLE4.h"
+#include <math.h>
+
+/** Defining static variables */
+static real_t altitude_state_estimate[3];
+static real_t altitude_state_estimate_prev[3];
+static real_t altitude_control_action[1];
+static real_t relative_altitude[3];
+static real_t altitude_proportion_action[1];
+
+/**
+* Call this at the moment we turn on the altitudeswitch. (target_z = sonar at this moment)
+*/
+void altitude_controller_init(real_t reference_height) {
+	/* Initializing the altitude_state_estimate */
+	altitude_state_estimate[0] = 0.0;
+	altitude_state_estimate[1] = reference_height;
+	altitude_state_estimate[2] = 0.0;
+	/* Initializing the altitude_control_action */
+	altitude_control_action[0] = 0.0;
+}
+
+/**
+* Getter for altitude_control_actions to access this variable outside of altitude_controller.c
+*/
+real_t * get_altitude_control_action(void) {
+	return altitude_control_action;
+}
+
+/**
+* Getter for altitude_state_estimate to access this variable outside of altitude_controller.c
+*/
+real_t * get_altitude_state_estimate(void) {
+	return altitude_state_estimate;
+}
+
+real_t * get_altitude_proportion_action(void) {
+	return altitude_proportion_action;
+}
+
+/**
+ * STATE_ESTIMATOR estimates the next state based on the previous state.
+ * this function uses the measurements of the sonar and
+ * the L matrix previously calculated in MATLAB
+ */
+void state_estimator_altitude(real_t sonar_measurements) {
+	/* x_est = Ad*x_est + L*(Cd*x_est - y) + Bd*u */
+
+	altitude_state_estimate_prev[0] = altitude_state_estimate[0];
+	altitude_state_estimate_prev[1] = altitude_state_estimate[1];
+	altitude_state_estimate_prev[2] = altitude_state_estimate[2];
+	/* altitude_state_estimate <-- (Ad + L*Cd) * altitude_state_estimate_prev */
+	altitude_state_estimate[0] = (8.868778e-01) * altitude_state_estimate_prev[0] + (-3.211015e-02) * altitude_state_estimate_prev[1];
+	altitude_state_estimate[1] = (4.608806e-05) * altitude_state_estimate_prev[0] + (9.533567e-01) * altitude_state_estimate_prev[1] + (4.201681e-03) * altitude_state_estimate_prev[2];
+	altitude_state_estimate[2] = (2.150769e-02) * altitude_state_estimate_prev[0] + (-2.537814e-01) * altitude_state_estimate_prev[1] + (1) * altitude_state_estimate_prev[2];
+	/* altitude_state_estimate = altitude_state_estimate - L * (sonar_measurements) */
+	altitude_state_estimate[0] = altitude_state_estimate[0] - (-3.211015e-02) * sonar_measurements;
+	altitude_state_estimate[1] = altitude_state_estimate[1] - (-4.664328e-02) * sonar_measurements;
+	altitude_state_estimate[2] = altitude_state_estimate[2] - (-2.537814e-01) * sonar_measurements;
+	/* altitude_state_estimate = altitude_state_estimate + Bd * (altitude_control_action) */
+	altitude_state_estimate[0] = altitude_state_estimate[0] + (1.318439e+01) * altitude_control_action[0];
+	altitude_state_estimate[1] = altitude_state_estimate[1] + (2.170815e-04) * altitude_control_action[0];
+	altitude_state_estimate[2] = altitude_state_estimate[2] + (1.534732e-01) * altitude_control_action[0];
+}
+
+/**
+ * COMPUTE_CONTROL_ACTION_ALTITUDE calculates the output of the controller
+ * based on the Kx matrix and Kz value calculated in matlab and the estimated state.
+ * But first we calculate the relative_altitude
+ * Second we calculate the altitude_proportion_action this is the Kx * (relative _altitude) 
+ * Now we have all the paramaters we need to calculate altitude_contol_actions 
+ */
+void compute_control_action_altitude(real_t sonar_measurements) {
+
+	real_t * altitude_reference = get_altitude_reference();
+	real_t * integral_action_altitude = get_integral_action_altitude();
+	state_estimator_altitude(sonar_measurements);
+	relative_altitude[0] = altitude_state_estimate[0] - altitude_reference[0];
+	relative_altitude[1] = altitude_state_estimate[1] - altitude_reference[1];
+	relative_altitude[2] = altitude_state_estimate[2] - altitude_reference[2];
+
+	/* altitude_proportion_action <-- (Kx) * relative_altitude */
+	altitude_proportion_action[0] = (-6.813808e-02) * relative_altitude[0] + (-2.140927e-01) * relative_altitude[1] + (-1.193386e-01) * relative_altitude[2];
+
+	/*altitude_contol_action = u_estimate + altitude_proportion_action + Kz * integral_action_altitude */
+	altitude_control_action[0] = altitude_reference[3] + altitude_proportion_action[0] + 1.227309e-01 * integral_action_altitude[0];
+	compute_integral_action_altitude(altitude_reference[1],sonar_measurements);
+
+}

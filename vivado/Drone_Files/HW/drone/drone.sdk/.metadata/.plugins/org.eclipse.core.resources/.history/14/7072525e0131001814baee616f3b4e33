@@ -1,0 +1,23 @@
+/**********************************************************************************************************************
+*   Voltage calculation file
+*   this file will convert the control action vector (3x1) to the 4 required voltages. [u(3x1) --> v(4x1)]
+*   The common factor (thrust) is calculated by the altitude controller
+***********************************************************************************************************************/
+
+#include "../attitude_controller/EAGLE4.h"
+
+static float output_voltage[4];
+
+void control_to_voltage(float rot_x,float rot_y,float rot_z,float alt_thrust) {
+    
+    output_voltage[0] = alt_thrust + rot_x + rot_y - rot_z;
+    output_voltage[1] = alt_thrust + rot_x - rot_y + rot_z;
+    output_voltage[2] = alt_thrust - rot_x + rot_y + rot_z;
+    output_voltage[3] = alt_thrust - rot_x - rot_y - rot_z;
+
+}
+/* Getter to return the output voltages in other files */
+float * get_control_to_voltage(void){
+    return output_voltage;
+}
+

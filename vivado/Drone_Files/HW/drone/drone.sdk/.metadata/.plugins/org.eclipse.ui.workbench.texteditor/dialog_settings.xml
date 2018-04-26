@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="get_" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="get_"/>
+			<item value="control_action"/>
+			<item value="state_estimate"/>
+			<item value="PLATFORM_TYPE"/>
+			<item value="state"/>
+			<item value="out_voltages"/>
+			<item value="double"/>
+		</list>
+		<list key="replacehistory">
+			<item value="attitude_control_actions"/>
+			<item value="attitude_state_estimate"/>
+			<item value="real_t"/>
+			<item value="v"/>
+			<item value="float"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="283" key="DIALOG_WIDTH"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="476" key="DIALOG_HEIGHT"/>
+		<item value="189" key="DIALOG_X_ORIGIN"/>
+		<item value="165" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,53 @@
+13:56:16 **** Auto Build of configuration Debug for project drone3 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/utils/input_bias.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utils/input_bias.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../drone3_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/utils/input_bias.d" -MT"src/utils/input_bias.o" -o "src/utils/input_bias.o" "../src/utils/input_bias.c"
+In file included from ../src/utils/../control/../EAGLE4/EAGLE4.h:10:0,
+                 from ../src/utils/../control/attitude.h:13,
+                 from ../src/utils/../main.h:39,
+                 from ../src/utils/input_bias.h:11,
+                 from ../src/utils/input_bias.c:7:
+../src/utils/../control/../EAGLE4/../control/altitude.c: In function 'altitude_init':
+../src/utils/../control/../EAGLE4/../control/altitude.c:30:2: warning: implicit declaration of function 'read_sonar_accurate' [-Wimplicit-function-declaration]
+  read_sonar_accurate();
+  ^
+../src/utils/../control/../EAGLE4/../control/altitude.c:31:13: error: 'sonar' undeclared (first use in this function)
+  target_z = sonar;
+             ^
+../src/utils/../control/../EAGLE4/../control/altitude.c:31:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/utils/../control/../EAGLE4/../control/altitude.c: In function 'correct_tilt_height':
+../src/utils/../control/../EAGLE4/../control/altitude.c:43:6: error: 'tilt_reject' undeclared (first use in this function)
+  if (tilt_reject == TILT_REJECT_ON) {
+      ^
+../src/utils/../control/../EAGLE4/../control/altitude.c:43:21: error: 'TILT_REJECT_ON' undeclared (first use in this function)
+  if (tilt_reject == TILT_REJECT_ON) {
+                     ^
+../src/utils/../control/../EAGLE4/../control/altitude.c:44:18: error: 'sonar' undeclared (first use in this function)
+   float pz_err = sonar;
+                  ^
+../src/utils/../control/../EAGLE4/../control/altitude.c: In function 'thrust_out':
+../src/utils/../control/../EAGLE4/../control/altitude.c:53:24: error: 'c_h' undeclared (first use in this function)
+  alt_thrust = thrust + c_h; // shifted to actual value
+                        ^
+In file included from ../src/utils/../main.h:41:0,
+                 from ../src/utils/input_bias.h:11,
+                 from ../src/utils/input_bias.c:7:
+../src/utils/../sonar/sonar.h: At top level:
+../src/utils/../sonar/sonar.h:36:6: warning: conflicting types for 'read_sonar_accurate'
+ void read_sonar_accurate();
+      ^
+In file included from ../src/utils/../control/../EAGLE4/EAGLE4.h:10:0,
+                 from ../src/utils/../control/attitude.h:13,
+                 from ../src/utils/../main.h:39,
+                 from ../src/utils/input_bias.h:11,
+                 from ../src/utils/input_bias.c:7:
+../src/utils/../control/../EAGLE4/../control/altitude.c:30:2: note: previous implicit declaration of 'read_sonar_accurate' was here
+  read_sonar_accurate();
+  ^
+make: *** [src/utils/input_bias.o] Error 1
+
+13:56:16 Build Finished (took 186ms)
+

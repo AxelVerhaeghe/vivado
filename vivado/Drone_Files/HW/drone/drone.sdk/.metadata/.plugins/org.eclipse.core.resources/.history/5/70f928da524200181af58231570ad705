@@ -1,0 +1,62 @@
+/** get the header files */
+#include "../EAGLE4.h"
+#include <math.h>
+#include <stdio.h>
+static real_t imu_measurements[NY];
+static real_t imu_measurements_reduced[NY - 1];
+
+void imu_measurements_init(void) {
+	/* call this before taking off */
+	/* Initializing the imu_measurements */
+	imu_measurements[0] = 1.0;
+	imu_measurements[1] = 0.0;
+	imu_measurements[2] = 0.0;
+	imu_measurements[3] = 0.0;
+	imu_measurements[4] = 0.0;
+	imu_measurements[5] = 0.0;
+	imu_measurements[6] = 0.0;
+	imu_measurements_reduced[0] = 0.0;
+	imu_measurements_reduced[1] = 0.0;
+	imu_measurements_reduced[2] = 0.0;
+	imu_measurements_reduced[3] = 0.0;
+	imu_measurements_reduced[4] = 0.0;
+	imu_measurements_reduced[5] = 0.0;
+
+}
+
+real_t * get_imu_measurements(void) {
+	return imu_measurements;
+}
+
+/**
+ * loading in the imu_meas
+ * we save the measurements that we get from the imu in the array imu_measurements
+ */
+void set_imu_measurements(real_t * q, real_t* w) {
+	imu_measurements[0] = q[0];
+	imu_measurements[1] = q[1];
+	imu_measurements[2] = q[2];
+	imu_measurements[3] = q[3];
+	imu_measurements[4] = w[0];
+	imu_measurements[5] = w[1];
+	imu_measurements[6] = w[2];
+
+}
+
+real_t * get_imu_measurements_reduced(void) {
+	return imu_measurements_reduced;
+}
+
+/**
+ * imu_measurements_reduced is an array containing all the imu measurements
+ * except for the first one
+ */
+void set_imu_measurements_reduced(real_t * q, real_t *w) {
+	set_imu_measurements(q,w);
+	imu_measurements_reduced[0] = imu_measurements[1];
+	imu_measurements_reduced[1] = imu_measurements[2];
+	imu_measurements_reduced[2] = imu_measurements[3];
+	imu_measurements_reduced[3] = imu_measurements[4];
+	imu_measurements_reduced[4] = imu_measurements[5];
+	imu_measurements_reduced[5] = imu_measurements[6];
+}

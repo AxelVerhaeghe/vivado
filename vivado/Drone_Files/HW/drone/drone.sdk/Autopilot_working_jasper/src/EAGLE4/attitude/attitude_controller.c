@@ -1,0 +1,210 @@
+#include "../EAGLE4.h"
+#include <math.h>
+
+/** Defining static variables */
+static real_t attitude_state_estimate[NX];
+static real_t attitude_state_estimate_reduced[NX_REDUCED];
+static real_t attitude_control_actions[NU];
+static real_t relative_attitude[NX_REDUCED];
+
+/**
+* Call this before taking off.
+*/
+void attitude_controller_init(void) {
+	/* Initializing the attitude_state_estimate_reduced which we use for our calculations of the new state estimates */
+	attitude_state_estimate_reduced[0] = 0.0;
+	attitude_state_estimate_reduced[1] = 0.0;
+	attitude_state_estimate_reduced[2] = 0.0;
+	attitude_state_estimate_reduced[3] = 0.0;
+	attitude_state_estimate_reduced[4] = 0.0;
+	attitude_state_estimate_reduced[5] = 0.0;
+	attitude_state_estimate_reduced[6] = 0.0;
+	attitude_state_estimate_reduced[7] = 0.0;
+	attitude_state_estimate_reduced[8] = 0.0;
+	/* Initializing the attitude_control_actions */
+	attitude_control_actions[0] = 0.0;
+	attitude_control_actions[1] = 0.0;
+	attitude_control_actions[2] = 0.0;
+	/* Initializing our attitude_state_estimates which we use to compute our control actions*/
+	attitude_state_estimate[0] = 1.0;
+	attitude_state_estimate[1] = 0.0;
+	attitude_state_estimate[2] = 0.0;
+	attitude_state_estimate[3] = 0.0;
+	attitude_state_estimate[4] = 0.0;
+	attitude_state_estimate[5] = 0.0;
+	attitude_state_estimate[6] = 0.0;
+	attitude_state_estimate[7] = 0.0;
+	attitude_state_estimate[8] = 0.0;
+	attitude_state_estimate[9] = 0.0;
+}
+
+/**
+* Getter for attitude_control_actions
+*/
+real_t * get_attitude_control_action(void) {
+	return attitude_control_actions;
+}
+
+/**
+* Getter for attitude_state_estimate_reduced
+*/
+real_t * get_attitude_state_estimate_reduced(void) {
+	return attitude_state_estimate_reduced;
+}
+
+/**
+ * STATE_ESTIMATOR estimates the next state based on the previous state.
+ * this function uses the measurements of the IMU and
+ * the L matrix previously calculated in MATLAB
+ */
+void state_estimator(void){
+/* here we only use the last 6 values of our inputted imu_measurements so we work with the reduced version */
+
+	real_t * imu_measurements = get_imu_measurements();
+	/* x_est = Ad*x_est + L*(Cd*x_est - y) + Bd*u */
+
+	Quat32 quat_diff;
+	Quat32 quat_est;
+	Quat32 quat_measured;
+
+	real_t measure_diff[NY-1];
+	real_t temp[NX-1];
+	real_t quat_w;
+
+	quat_est.w = (float) attitude_state_estimate[0];
+	quat_est.x = (float) attitude_state_estimate[1];
+	quat_est.y = (float) attitude_state_estimate[2];
+	quat_est.z = (float) attitude_state_estimate[3];
+
+	quat_measured.w = (float) imu_measurements[0];
+	quat_measured.x = (float) -imu_measurements[1];
+	quat_measured.y = (float) -imu_measurements[2];
+	quat_measured.z = (float) -imu_measurements[3];
+
+	quat32_multiply(&quat_diff, &quat_est, &quat_measured);
+
+	/* difference between estimated measure and measure */
+	measure_diff[0] = (real_t) quat_diff.x;
+	measure_diff[1] = (real_t) quat_diff.y;
+	measure_diff[2] = (real_t) quat_diff.z;
+	measure_diff[3] = (real_t) attitude_state_estimate[4] - imu_measurements[4];
+	measure_diff[4] = (real_t) attitude_state_estimate[5] - imu_measurements[5];
+	measure_diff[5] = (real_t) attitude_state_estimate[6] - imu_measurements[6];
+
+	/* temp = L * measure_diff */
+	/* START AUTO GENERATED */
+	temp[0] = (-0.0021003346) * measure_diff[0] + (-0.0000000000) * measure_diff[1] + (-0.0000000000) * measure_diff[2] + (-0.0025551285) * measure_diff[3] + (-0.0000000000) * measure_diff[4] + (-0.0000000000) * measure_diff[5];
+	temp[1] = (-0.0000000000) * measure_diff[0] + (-0.0021003514) * measure_diff[1] + (-0.0000000000) * measure_diff[2] + (-0.0000000000) * measure_diff[3] + (-0.0025402633) * measure_diff[4] + (-0.0000000000) * measure_diff[5];
+	temp[2] = (-0.0000000000) * measure_diff[0] + (-0.0000000000) * measure_diff[1] + (-0.0020996392) * measure_diff[2] + (-0.0000000000) * measure_diff[3] + (-0.0000000000) * measure_diff[4] + (-0.0025732215) * measure_diff[5];
+	temp[3] = (-0.0016027555) * measure_diff[0] + (-0.0000000000) * measure_diff[1] + (-0.0000000000) * measure_diff[2] + (-0.4494684828) * measure_diff[3] + (-0.0000000000) * measure_diff[4] + (-0.0000000000) * measure_diff[5];
+	temp[4] = (-0.0000000000) * measure_diff[0] + (-0.0016197282) * measure_diff[1] + (-0.0000000000) * measure_diff[2] + (-0.0000000000) * measure_diff[3] + (-0.4347389812) * measure_diff[4] + (-0.0000000000) * measure_diff[5];
+	temp[5] = (-0.0000000000) * measure_diff[0] + (-0.0000000000) * measure_diff[1] + (-0.0015349891) * measure_diff[2] + (-0.0000000000) * measure_diff[3] + (-0.0000000000) * measure_diff[4] + (-0.4770713020) * measure_diff[5];
+	temp[6] = (0.0073192618) * measure_diff[0] + (-0.0000000000) * measure_diff[1] + (-0.0000000000) * measure_diff[2] + (-6.4727570342) * measure_diff[3] + (-0.0000000000) * measure_diff[4] + (-0.0000000000) * measure_diff[5];
+	temp[7] = (-0.0000000000) * measure_diff[0] + (0.0072545804) * measure_diff[1] + (-0.0000000000) * measure_diff[2] + (-0.0000000000) * measure_diff[3] + (-6.4465666083) * measure_diff[4] + (-0.0000000000) * measure_diff[5];
+	temp[8] = (-0.0000000000) * measure_diff[0] + (-0.0000000000) * measure_diff[1] + (0.0027258609) * measure_diff[2] + (-0.0000000000) * measure_diff[3] + (-0.0000000000) * measure_diff[4] + (-7.3359991596) * measure_diff[5];
+	/* STOP AUTO GENERATED */
+
+	/* temp = temp + A * state_estimate */
+	/* START AUTO GENERATED */
+	temp[0] = (1.0000000000) * temp[0] + (1.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (0.0021008403) * attitude_state_estimate[4] + (0.0000000000) * attitude_state_estimate[5] + (0.0000000000) * attitude_state_estimate[6] + (0.0000117470) * attitude_state_estimate[7] + (0.0000000000) * attitude_state_estimate[8] + (0.0000000000) * attitude_state_estimate[9];
+	temp[1] = (1.0000000000) * temp[1] + (0.0000000000) * attitude_state_estimate[1] + (1.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (0.0000000000) * attitude_state_estimate[4] + (0.0021008403) * attitude_state_estimate[5] + (0.0000000000) * attitude_state_estimate[6] + (0.0000000000) * attitude_state_estimate[7] + (0.0000110905) * attitude_state_estimate[8] + (0.0000000000) * attitude_state_estimate[9];
+	temp[2] = (1.0000000000) * temp[2] + (0.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (1.0000000000) * attitude_state_estimate[3] + (0.0000000000) * attitude_state_estimate[4] + (0.0000000000) * attitude_state_estimate[5] + (0.0021008403) * attitude_state_estimate[6] + (0.0000000000) * attitude_state_estimate[7] + (0.0000000000) * attitude_state_estimate[8] + (-0.0000070849) * attitude_state_estimate[9];
+	temp[3] = (1.0000000000) * temp[3] + (0.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (1.0000000000) * attitude_state_estimate[4] + (0.0000000000) * attitude_state_estimate[5] + (0.0000000000) * attitude_state_estimate[6] + (0.0109637883) * attitude_state_estimate[7] + (0.0000000000) * attitude_state_estimate[8] + (0.0000000000) * attitude_state_estimate[9];
+	temp[4] = (1.0000000000) * temp[4] + (0.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (0.0000000000) * attitude_state_estimate[4] + (1.0000000000) * attitude_state_estimate[5] + (0.0000000000) * attitude_state_estimate[6] + (0.0000000000) * attitude_state_estimate[7] + (0.0103511060) * attitude_state_estimate[8] + (0.0000000000) * attitude_state_estimate[9];
+	temp[5] = (1.0000000000) * temp[5] + (0.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (0.0000000000) * attitude_state_estimate[4] + (0.0000000000) * attitude_state_estimate[5] + (1.0000000000) * attitude_state_estimate[6] + (0.0000000000) * attitude_state_estimate[7] + (0.0000000000) * attitude_state_estimate[8] + (-0.0066125568) * attitude_state_estimate[9];
+	temp[6] = (1.0000000000) * temp[6] + (0.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (0.0000000000) * attitude_state_estimate[4] + (0.0000000000) * attitude_state_estimate[5] + (0.0000000000) * attitude_state_estimate[6] + (0.8868778485) * attitude_state_estimate[7] + (-0.0000000000) * attitude_state_estimate[8] + (0.0000000000) * attitude_state_estimate[9];
+	temp[7] = (1.0000000000) * temp[7] + (0.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (0.0000000000) * attitude_state_estimate[4] + (0.0000000000) * attitude_state_estimate[5] + (0.0000000000) * attitude_state_estimate[6] + (0.0000000000) * attitude_state_estimate[7] + (0.8868778485) * attitude_state_estimate[8] + (-0.0000000000) * attitude_state_estimate[9];
+	temp[8] = (1.0000000000) * temp[8] + (0.0000000000) * attitude_state_estimate[1] + (0.0000000000) * attitude_state_estimate[2] + (0.0000000000) * attitude_state_estimate[3] + (0.0000000000) * attitude_state_estimate[4] + (0.0000000000) * attitude_state_estimate[5] + (0.0000000000) * attitude_state_estimate[6] + (0.0000000000) * attitude_state_estimate[7] + (0.0000000000) * attitude_state_estimate[8] + (0.8868778485) * attitude_state_estimate[9];
+	/* STOP AUTO GENERATED */
+
+	/* temp = temp + B * control_action */
+	/* START AUTO GENERATED */
+	temp[0] = (1.0000000000) * temp[0] + (0.0000553299) * attitude_control_actions[0] + (0.0000000000) * attitude_control_actions[1] + (0.0000000000) * attitude_control_actions[2];
+	temp[1] = (1.0000000000) * temp[1] + (0.0000000000) * attitude_control_actions[0] + (0.0000522379) * attitude_control_actions[1] + (0.0000000000) * attitude_control_actions[2];
+	temp[2] = (1.0000000000) * temp[2] + (0.0000000000) * attitude_control_actions[0] + (0.0000000000) * attitude_control_actions[1] + (0.0008998320) * attitude_control_actions[2];
+	temp[3] = (1.0000000000) * temp[3] + (0.0782347063) * attitude_control_actions[0] + (0.0000000000) * attitude_control_actions[1] + (0.0000000000) * attitude_control_actions[2];
+	temp[4] = (1.0000000000) * temp[4] + (0.0000000000) * attitude_control_actions[0] + (0.0738627668) * attitude_control_actions[1] + (0.0000000000) * attitude_control_actions[2];
+	temp[5] = (1.0000000000) * temp[5] + (0.0000000000) * attitude_control_actions[0] + (0.0000000000) * attitude_control_actions[1] + (0.8412237120) * attitude_control_actions[2];
+	temp[6] = (1.0000000000) * temp[6] + (13.1843867546) * attitude_control_actions[0] + (0.0000000000) * attitude_control_actions[1] + (0.0000000000) * attitude_control_actions[2];
+	temp[7] = (1.0000000000) * temp[7] + (0.0000000000) * attitude_control_actions[0] + (13.1843867546) * attitude_control_actions[1] + (0.0000000000) * attitude_control_actions[2];
+	temp[8] = (1.0000000000) * temp[8] + (0.0000000000) * attitude_control_actions[0] + (0.0000000000) * attitude_control_actions[1] + (13.1843867546) * attitude_control_actions[2];
+	/* STOP AUTO GENERATED */
+
+	/* transform to full quaternion */
+	quat_w = 1 - (temp[0] * temp[0]) - (temp[1] * temp[1]) - (temp[2] * temp[2]);
+	quat_w = sqrt(quat_w);
+	if (imu_measurements[0] < 0) {
+		quat_w = quat_w * (-1);
+	}
+
+	/* update state estimate */
+	attitude_state_estimate[0] = quat_w;
+	attitude_state_estimate[1] = temp[0];
+	attitude_state_estimate[2] = temp[1];
+	attitude_state_estimate[3] = temp[2];
+	attitude_state_estimate[4] = temp[3];
+	attitude_state_estimate[5] = temp[4];
+	attitude_state_estimate[6] = temp[5];
+	attitude_state_estimate[7] = temp[6];
+	attitude_state_estimate[8] = temp[7];
+	attitude_state_estimate[9] = temp[8];
+
+	attitude_state_estimate_reduced[0] = temp[0];
+	attitude_state_estimate_reduced[1] = temp[1];
+	attitude_state_estimate_reduced[2] = temp[2];
+	attitude_state_estimate_reduced[3] = temp[3];
+	attitude_state_estimate_reduced[4] = temp[4];
+	attitude_state_estimate_reduced[5] = temp[5];
+	attitude_state_estimate_reduced[6] = temp[6];
+	attitude_state_estimate_reduced[7] = temp[7];
+	attitude_state_estimate_reduced[8] = temp[8];
+
+}
+
+/**
+* This function expands the state_estimates to the full form
+*/
+void attitude_state_reduced_to_full(void){
+	real_t * imu_measurements = get_imu_measurements();
+	attitude_state_estimate[0] = copysign(sqrt(1 - attitude_state_estimate_reduced[0] * attitude_state_estimate_reduced[0] - attitude_state_estimate_reduced[1] * attitude_state_estimate_reduced[1] - attitude_state_estimate_reduced[2] * attitude_state_estimate_reduced[2]),imu_measurements[0]);
+	attitude_state_estimate[1] = attitude_state_estimate_reduced[0];
+	attitude_state_estimate[2] = attitude_state_estimate_reduced[1];
+	attitude_state_estimate[3] = attitude_state_estimate_reduced[2];
+	attitude_state_estimate[4] = attitude_state_estimate_reduced[3];
+	attitude_state_estimate[5] = attitude_state_estimate_reduced[4];
+	attitude_state_estimate[6] = attitude_state_estimate_reduced[5];
+	attitude_state_estimate[7] = attitude_state_estimate_reduced[6];
+	attitude_state_estimate[8] = attitude_state_estimate_reduced[7];
+	attitude_state_estimate[9] = attitude_state_estimate_reduced[8];
+}
+
+/**
+ * COMPUTE_CONTROL_ACTION calculates the output of the controller
+ * based on the K matrix calculated in matlab and the estimated state.
+ * But first we calculate the relative_attitude
+ * The first 3 elements of the array are created by the Hamilton product of the measured quaternion and the conjugate of the estimated quaternion
+ * The rest is equal to the attitude_stat_estimate because the reference angular velocity and the reference deviation from the hovering spin of rotation are 0).
+ */
+void compute_ctrl_action(void){
+	real_t * attitude_reference = get_attitude_reference();
+	relative_attitude[0] = attitude_state_estimate[1] * attitude_reference[0] - attitude_reference[1] * attitude_state_estimate[0] + attitude_state_estimate[3] * attitude_reference[2] - attitude_reference[3] * attitude_state_estimate[2] ;
+	relative_attitude[1] = attitude_state_estimate[2] * attitude_reference[0] - attitude_reference[1] * attitude_state_estimate[3] - attitude_state_estimate[0] * attitude_reference[2] + attitude_reference[3] * attitude_state_estimate[1] ;
+	relative_attitude[2] = attitude_state_estimate[3] * attitude_reference[0] + attitude_reference[1] * attitude_state_estimate[2] - attitude_state_estimate[1] * attitude_reference[2] - attitude_reference[3] * attitude_state_estimate[0] ;
+	relative_attitude[3] = attitude_state_estimate[4] ;
+	relative_attitude[4] = attitude_state_estimate[5] ;
+	relative_attitude[5] = attitude_state_estimate[6] ;
+	relative_attitude[6] = attitude_state_estimate[7] ;
+	relative_attitude[7] = attitude_state_estimate[8] ;
+	relative_attitude[8] = attitude_state_estimate[9] ;
+	/* attitude_control_actions <-- (K) * relative_attitude */
+	attitude_control_actions[0] = (-1.586674e+01) * relative_attitude[0] + (-7.169046e-01) * relative_attitude[3] + (-7.202287e-02) * relative_attitude[6];
+	attitude_control_actions[1] = (-1.590354e+01) * relative_attitude[1] + (-7.332292e-01) * relative_attitude[4] + (-7.185947e-02) * relative_attitude[7];
+	attitude_control_actions[2] = (-1.147848e+01) * relative_attitude[2] + (-8.788310e-01) * relative_attitude[5] + (-3.142960e-03) * relative_attitude[8];
+	//state_estimator();
+}
+
+void set_control_action(float* u) {
+	attitude_control_actions[0] = u[0];
+	attitude_control_actions[1] = u[1];
+	attitude_control_actions[2] = u[2];
+}

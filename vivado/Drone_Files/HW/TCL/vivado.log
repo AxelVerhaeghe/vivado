@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Mar 12 15:07:29 2018
+# Process ID: 13324
+# Current directory: /users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL
+# Command line: vivado
+# Log file: /users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL/vivado.log
+# Journal file: /users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source drone.tcl
+# set origin_dir "."
+# if { [info exists ::origin_dir_loc] } {
+#   set origin_dir $::origin_dir_loc
+# }
+# variable script_file
+# set script_file "drone.tcl"
+# proc help {} {
+#   variable script_file
+#   puts "\nDescription:"
+#   puts "Recreate a Vivado project from this script. The created project will be"
+#   puts "functionally equivalent to the original project for which this script was"
+#   puts "generated. The script contains commands for creating a project, filesets,"
+#   puts "runs, adding/importing sources and setting properties on various objects.\n"
+#   puts "Syntax:"
+#   puts "$script_file"
+#   puts "$script_file -tclargs \[--origin_dir <path>\]"
+#   puts "$script_file -tclargs \[--help\]\n"
+#   puts "Usage:"
+#   puts "Name                   Description"
+#   puts "-------------------------------------------------------------------------"
+#   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+#   puts "                       origin_dir path value is \".\", otherwise, the value"
+#   puts "                       that was set with the \"-paths_relative_to\" switch"
+#   puts "                       when this script was generated.\n"
+#   puts "\[--help\]               Print help information for this script"
+#   puts "-------------------------------------------------------------------------\n"
+#   exit 0
+# }
+# if { $::argc > 0 } {
+#   for {set i 0} {$i < [llength $::argc]} {incr i} {
+#     set option [string trim [lindex $::argv $i]]
+#     switch -regexp -- $option {
+#       "--origin_dir" { incr i; set origin_dir [lindex $::argv $i] }
+#       "--help"       { help }
+#       default {
+#         if { [regexp {^-} $option] } {
+#           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+#           return 1
+#         }
+#       }
+#     }
+#   }
+# }
+# create_project drone ./../drone -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 5934.414 ; gain = 105.172 ; free physical = 4660 ; free virtual = 22703
+# set proj_dir [get_property directory [current_project]]
+# set obj [get_projects drone]
+# set_property "board_part" "digilentinc.com:zybo:part0:1.0" $obj
+# set_property "default_lib" "xil_defaultlib" $obj
+# set_property "generate_ip_upgrade_log" "0" $obj
+# set_property "sim.ip.auto_export_scripts" "1" $obj
+# set_property "simulator_language" "Mixed" $obj
+# set_property "target_language" "VHDL" $obj
+# set_property "xpm_libraries" "XPM_CDC XPM_MEMORY" $obj
+# if {[string equal [get_filesets -quiet sources_1] ""]} {
+#   create_fileset -srcset sources_1
+# }
+# set obj [get_filesets sources_1]
+# set_property "ip_repo_paths" "[file normalize "$origin_dir/../TCL/IP_Repo"]" $obj
+# update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL/IP_Repo'.
+# set obj [get_filesets sources_1]
+# set files [list \
+#  "[file normalize "$origin_dir/../BD/drone.bd"]"\
+#  "[file normalize "$origin_dir/../TCL/hdl/drone_wrapper.vhd"]"\
+# ]
+# add_files -norecurse -fileset $obj $files
+# set file "$origin_dir/../BD/drone.bd"
+# set file [file normalize $file]
+# set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
+# if { ![get_property "is_locked" $file_obj] } {
+#   set_property "generate_synth_checkpoint" "0" $file_obj
+# }
+# set file "$origin_dir/../TCL/hdl/drone_wrapper.vhd"
+# set file [file normalize $file]
+# set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
+# set_property "file_type" "VHDL" $file_obj
+# set obj [get_filesets sources_1]
+# set_property "top" "drone_wrapper" $obj
+# if {[string equal [get_filesets -quiet constrs_1] ""]} {
+#   create_fileset -constrset constrs_1
+# }
+# set obj [get_filesets constrs_1]
+# set file "[file normalize "$origin_dir/../TCL/constraints/ZYBO_Master.xdc"]"
+# set file_added [add_files -norecurse -fileset $obj $file]
+# set file "$origin_dir/../TCL/constraints/ZYBO_Master.xdc"
+# set file [file normalize $file]
+# set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
+# set_property "file_type" "XDC" $file_obj
+# set obj [get_filesets constrs_1]
+# set_property "target_constrs_file" "[file normalize "$origin_dir/../TCL/constraints/ZYBO_Master.xdc"]" $obj
+# if {[string equal [get_filesets -quiet sim_1] ""]} {
+#   create_fileset -simset sim_1
+# }
+# set obj [get_filesets sim_1]
+# set obj [get_filesets sim_1]
+# set_property "top" "drone_wrapper" $obj
+# set_property "transport_int_delay" "0" $obj
+# set_property "transport_path_delay" "0" $obj
+# set_property "xelab.nosort" "1" $obj
+# set_property "xelab.unifast" "" $obj
+# if {[string equal [get_runs -quiet synth_1] ""]} {
+#   create_run -name synth_1 -part xc7z010clg400-1 -flow {Vivado Synthesis 2014} -strategy "Flow_RuntimeOptimized" -constrset constrs_1
+# } else {
+#   set_property strategy "Flow_RuntimeOptimized" [get_runs synth_1]
+#   set_property flow "Vivado Synthesis 2014" [get_runs synth_1]
+# }
+# set obj [get_runs synth_1]
+# set_property "steps.synth_design.args.flatten_hierarchy" "none" $obj
+# set_property "steps.synth_design.args.directive" "RuntimeOptimized" $obj
+# set_property "steps.synth_design.args.retiming" "1" $obj
+# set_property "steps.synth_design.args.fsm_extraction" "off" $obj
+# set_property "steps.synth_design.args.keep_equivalent_registers" "1" $obj
+# current_run -synthesis [get_runs synth_1]
+# if {[string equal [get_runs -quiet impl_1] ""]} {
+#   create_run -name impl_1 -part xc7z010clg400-1 -flow {Vivado Implementation 2016} -strategy "Flow_RuntimeOptimized" -constrset constrs_1 -parent_run synth_1
+# } else {
+#   set_property strategy "Flow_RuntimeOptimized" [get_runs impl_1]
+#   set_property flow "Vivado Implementation 2016" [get_runs impl_1]
+# }
+# set obj [get_runs impl_1]
+# set_property "steps.opt_design.args.directive" "RuntimeOptimized" $obj
+# set_property "steps.place_design.args.directive" "ExtraTimingOpt" $obj
+# set_property "steps.phys_opt_design.args.directive" "AddRetime" $obj
+# set_property "steps.route_design.args.directive" "NoTimingRelaxation" $obj
+# set_property "steps.post_route_phys_opt_design.is_enabled" "1" $obj
+# set_property "steps.post_route_phys_opt_design.args.directive" "AddRetime" $obj
+# set_property "steps.write_bitstream.args.readback_file" "0" $obj
+# set_property "steps.write_bitstream.args.verbose" "0" $obj
+# current_run -implementation [get_runs impl_1]
+# puts "INFO: Project created:drone"
+INFO: Project created:drone
+update_compile_order -fileset sources_1
+generate_target all [get_files  /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/drone.bd]
+Adding cell -- digilentinc.com:ip:dvi2rgb:1.6 - dvi2rgb_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_dvi2rgb_0_0 
+WARNING: [IP_Flow 19-3331] Invalid parameters found in dependency constraints of 'BUSIF_ENABLEMENT.AsyncRst' 
+WARNING: [IP_Flow 19-3331] Invalid parameters found in dependency constraints of 'BUSIF_ENABLEMENT.SyncRst' 
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_processing_system7_0_0 
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_xlconcat_0_0 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_xlconstant_0_0 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_xlconstant_1_0 
+Adding cell -- kuleuven.be:user:RC:1.0 - RC_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_RC_1_0 
+Adding cell -- kuleuven.be:user:RC:1.0 - RC_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_RC_0_0 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_testpins
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_axi_gpio_testpins_0 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_axi_gpio_led_0 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_video
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_axi_gpio_video_0 
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_axi_mem_intercon_0 
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_axi_vdma_0_0 
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_proc_sys_reset_0_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_processing_system7_0_axi_periph_0 
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_rst_processing_system7_0_100M_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_150M
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_rst_processing_system7_0_150M_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_v_vid_in_axi4s_0_0 
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_axi_dma_0_0 
+Adding cell -- xilinx.com:ip:fifo_generator:13.1 - fifo_generator_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_fifo_generator_0_0 
+INFO: [xilinx.com:ip:fifo_generator:13.1-5968] /fifo_generator_0Executing the post_config_ip from bd
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_rst_processing_system7_0_100M1_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:xlslice:1.0 - G
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_G_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - R
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_R_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - B
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_B_0 
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_xlconcat_1_0 
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_v_tc_0_0 
+Adding cell -- bertold.org:EagleTX:DVBOutputBuffer:1.0 - DVBOutputBuffer_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_DVBOutputBuffer_0_0 
+Adding cell -- kuleuven.be:user:kill_switch:1.0 - kill_switch_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_kill_switch_0_0 
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_PWM_AXI_triple_0_0 
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_3
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_PWM_AXI_triple_3_0 
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_4
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_PWM_AXI_triple_4_0 
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_5
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_PWM_AXI_triple_5_0 
+Adding cell -- bertold.org:user:ModemS2Control:1.0 - ModemS2Control_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_ModemS2Control_0_0 
+Adding cell -- user.org:user:ModemS2Zybo:1.0 - ModemS2Zybo_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_ModemS2Zybo_0_0 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_xbar_0 
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_auto_cc_2 
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_auto_cc_1 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_auto_pc_1 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_xbar_1 
+Adding cell -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_m00_data_fifo_0 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_m00_regslice_0 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_auto_us_0 
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_s01_regslice_0 
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us_cc_df
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_auto_us_cc_df_0 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_s00_regslice_0 
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us_df
+INFO: [BD 41-434] Could not find an IP with XCI file by name: drone_auto_us_df_0 
+Successfully read diagram <drone> from BD file </users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/drone.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+INFO: [xilinx.com:ip:axi_vdma:6.2-17] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=drone_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/m00_regslice/m_axi_bid'(2) to net 'm00_regslice_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/m00_regslice/m_axi_rid'(2) to net 'm00_regslice_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(2) - Only lower order bits will be connected.
+VHDL Output written to : /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/hdl/drone.vhd
+VHDL Output written to : /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/hdl/drone_wrapper.vhd
+Wrote  : </users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/drone.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] drone_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_testpins .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_led .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_video .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_150M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block G .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block B .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DVBOutputBuffer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block kill_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ModemS2Control_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ModemS2Zybo_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/s00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/s01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/m00_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us_df .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us_cc_df .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m12_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m13_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/hw_handoff/drone.hwh
+WARNING: [IP_Flow 19-3331] Invalid parameters found in dependency constraints of 'BUSIF_ENABLEMENT.AsyncRst' 
+WARNING: [IP_Flow 19-3331] Invalid parameters found in dependency constraints of 'BUSIF_ENABLEMENT.SyncRst' 
+Generated Block Design Tcl file /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/hw_handoff/drone_bd.tcl
+Generated Hardware Definition File /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/hdl/drone.hwdef
+generate_target: Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 6322.578 ; gain = 386.164 ; free physical = 3864 ; free virtual = 22301
+export_ip_user_files -of_objects [get_files /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/drone.bd] -no_script -force -quiet
+export_simulation -of_objects [get_files /users/students/data/eagle4/Drone_files/Drone_Files/HW/BD/drone.bd] -directory /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.ip_user_files -ipstatic_source_dir /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.ip_user_files/ipstatic -force -quiet
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+ERROR: [Vivado 12-4452] The hardware handoff file (.sysdef) does not exist. It may not have been generated due to: 
+ 1. A bitstream might not have been generated. Generate Bitstream and export again, or do not request a bitstream to be included in export.
+ 2. There are no block design hardware handoff files. Check the vivado log messages for more details. 
+open_hw
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Mar 12 15:24:40 2018] Launched synth_1...
+Run output will be captured here: /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.runs/synth_1/runme.log
+[Mon Mar 12 15:24:40 2018] Launched impl_1...
+Run output will be captured here: /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.runs/impl_1/runme.log
+file mkdir /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk
+file copy -force /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.runs/impl_1/drone_wrapper.sysdef /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+
+launch_sdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:54:00
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+refresh_hw_server {localhost:3121}
+WARNING: [Labtoolstcl 44-27] No hardware targets exist on the server [localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the refresh_hw_server command to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+refresh_hw_server {localhost:3121}
+WARNING: [Labtoolstcl 44-27] No hardware targets exist on the server [localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the refresh_hw_server command to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 12 16:28:50 2018...

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1520864679">
+  <File Type="RDS-UTIL" Name="drone_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="drone_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="drone_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="drone_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="drone_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="drone_wrapper_timing_summary_synth.pb"/>
+  <File Type="RDS-RDS" Name="drone_wrapper.vds"/>
+  <File Type="PA-TCL" Name="drone_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../BD/drone.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../TCL/hdl/drone_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../BD/ip/drone_ModemS2Zybo_0_0/ip/fir_compiler_0_1/rrc.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="drone_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../TCL/constraints/ZYBO_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../TCL/constraints/ZYBO_Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Synthesis 2014"/>
+    <Step Id="synth_design">
+      <Option Id="FlattenHierarchy">1</Option>
+      <Option Id="FsmExtraction">0</Option>
+      <Option Id="Directive">0</Option>
+      <Option Id="ReTiming">1</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>
