@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Apr 23 15:35:13 2018
+# Process ID: 7380
+# Current directory: /users/students/data/eagle4
+# Command line: wbtcv -mode batch -source /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone2.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /users/students/data/eagle4/webtalk.log
+# Journal file: /users/students/data/eagle4/webtalk.jou
+#-----------------------------------------------------------
+source /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone2.hw/webtalk/labtool_webtalk.tcl -notrace

@@ -1,0 +1,105 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+Process ID: 4048
+
+Current time: 	12/11/17 2:54:27 PM CET
+Time zone: 	Central European Time (Europe/Brussels)
+
+OS: CentOS Linux release 7.4.1708 (Core) 
+Version: 3.10.0-693.11.1.el7.x86_64
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/tps/lnx64/jre
+
+User name: 	r0580936
+User home directory: /users/start2015/r0580936
+User working directory: /users/students/data/eagle4/tutorials
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado
+RDI Data directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data
+RDI Bin directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/bin
+
+Vivado preferences path: /users/start2015/r0580936/.Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: /users/start2015/r0580936/.Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	195 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,844 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 34 MB (+32689kb) [00:00:05]
+// [Engine Memory]: 4,844 MB (+4928133kb) [00:00:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,849 MB. GUI used memory: 22 MB. Current time: 12/11/17 2:54:29 PM CET
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create New Project"); // l:JideButton (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 37 MB (+2035kb) [00:00:41]
+// [GUI Memory]: 45 MB (+6070kb) [00:00:41]
+// h:g (cv:JFrame): New Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 4,918 MB. GUI used memory: 23 MB. Current time: 12/11/17 2:55:04 PM CET
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+// Elapsed time: 17 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "First_tut"); // ao:JTextField (JPanel:JComponent, h:g)
+// Elapsed time: 16 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+// Elapsed time: 10 seconds
+selectCheckBox(PAResourceItoN.NewProjectWizard_DO_NOT_SPECIFY_SOURCES_AT_THIS_TIME, "Do not specify sources at this time", true); // h:JCheckBox (a:F, h:g): TRUE
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+setText("PAResourceOtoP.PartChooser_PARTS_SEARCH_FIELD", (String) null); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, h:g)
+// Elapsed time: 41 seconds
+selectButton(PAResourceOtoP.PartChooser_BOARDS, "Boards"); // m:s (JPanel:JComponent, h:g): TRUE
+// [GUI Memory]: 48 MB (+1136kb) [00:02:16]
+selectTable(PAResourceOtoP.PartChooser_BOARDS, "Zybo ; digilentinc.com ; B.3 ; xc7z010clg400-1 ; 400 ; 1.0 ; 60 ; 80 ; 35200 ; 0 ; 0 ; 100 ; 17600 ; 2 ; 0 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0 ; 0 ; 0 ; 0", 10, "Zybo", 0); // P:v (JViewport:JComponent, h:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+// bL:g (h:g):  Create Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project First_tut /users/students/data/eagle4/tutorials/First_tut -part xc7z010clg400-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 59 MB (+8453kb) [00:02:32]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:zybo:part0:1.0 [current_project] 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+// 'g' command handler elapsed time: 113 seconds
+dismissDialog("Create Project"); // bL:g (h:g)
+dismissDialog("New Project"); // h:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 4,979 MB. GUI used memory: 29 MB. Current time: 12/11/17 2:56:54 PM CET
+// [GUI Memory]: 63 MB (+1562kb) [00:03:24]
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (F:JPanel, b:g)
+// J:x (b:g): Create Source File: addNotify
+// Elapsed time: 17 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // ao:JTextField (JPanel:JComponent, J:x)

@@ -1,0 +1,52 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+Process ID: 3126
+
+Current time: 	2/27/18 4:40:27 PM CET
+Time zone: 	Central European Time (Europe/Brussels)
+
+OS: CentOS Linux release 7.4.1708 (Core) 
+Version: 3.10.0-693.17.1.el7.x86_64
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: :0
+Screen size: 683x707
+Screen resolution (DPI): 95
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/tps/lnx64/jre
+
+User name: 	r0639159
+User home directory: /users/students/r0639159
+User working directory: /users/students/data/eagle4/tutorials
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado
+RDI Data directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data
+RDI Bin directory: /esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/bin
+
+Vivado preferences path: /users/students/r0639159/.Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: /users/students/r0639159/.Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 4,847 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 28 MB (+26385kb) [00:00:04]
+// [Engine Memory]: 4,847 MB (+4931160kb) [00:00:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,854 MB. GUI used memory: 21 MB. Current time: 2/27/18 4:40:29 PM CET
+unMinimizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // ao:DockableFrame
+minimizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // ao:DockableFrame (FrameContainer:JideTabbedPane, cv:JFrame)
+// [GUI Memory]: 30 MB (+1623kb) [00:00:34]
+// [GUI Memory]: 36 MB (+4653kb) [00:00:39]

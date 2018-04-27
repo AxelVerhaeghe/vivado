@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Apr 23 15:30:35 2018
+# Process ID: 6940
+# Current directory: /users/students/data/eagle4
+# Command line: vivado
+# Log file: /users/students/data/eagle4/vivado.log
+# Journal file: /users/students/data/eagle4/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone2.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL/IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 5976.871 ; gain = 122.379 ; free physical = 4081 ; free virtual = 22665
+update_compile_order -fileset sources_1
+open_project /users/start2015/r0580936/Documents/EAGLE/eagle_copy/eagle_copy.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL/IP_Repo'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'.
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /users/start2015/r0580936/Documents/EAGLE/eagle_copy/eagle_copy.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 23 15:34:39 2018...
+INFO: [Common 17-344] 'open_project' was cancelled
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone2.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr 23 15:35:13 2018...
+open_project /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL/IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 6180.734 ; gain = 56.227 ; free physical = 3764 ; free virtual = 22466
+update_compile_order -fileset sources_1
+launch_sdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 23 16:05:30 2018...

@@ -1,0 +1,1 @@
+vt.global_cursor_default=0 logo.nologo coherent_pool=8M cma=16M

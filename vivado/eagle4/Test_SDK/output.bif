@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/users/students/data/eagle4/Test_SDK/FSBL/Debug/FSBL.elf
+	/users/students/data/eagle4/Test_SDK/ARM_1_wrapper_hw_platform_0/ARM_1_wrapper.bit
+	/users/students/data/eagle4/Test_SDK/attitude_controller/Debug/attitude_controller.elf
+}

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Dec 11 14:54:05 2017
+# Process ID: 4048
+# Current directory: /users/students/data/eagle4/tutorials
+# Command line: vivado
+# Log file: /users/students/data/eagle4/tutorials/vivado.log
+# Journal file: /users/students/data/eagle4/tutorials/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project First_tut /users/students/data/eagle4/tutorials/First_tut -part xc7z010clg400-1
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]

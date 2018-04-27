@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Apr 23 15:06:59 2018
+# Process ID: 4137
+# Current directory: /users/students/data/eagle4
+# Command line: vivado
+# Log file: /users/students/data/eagle4/vivado.log
+# Journal file: /users/students/data/eagle4/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/data/eagle4/Drone_files/Drone_Files/HW/TCL/IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2016.2/Vivado/2016.2/data/ip'.
+WARNING: [BD 41-1663] The design 'drone.bd' is locked for any modification. Locked reason(s):
+* IPI BXML file read-only. Please check file-permission. 
+* IPI BD-file read-only. Please check file-permission. 
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'drone.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+drone_auto_pc_1
+drone_auto_us_0
+drone_auto_us_df_0
+drone_auto_pc_0
+drone_auto_us_cc_df_0
+drone_m00_regslice_0
+drone_xlconstant_1_0
+drone_rst_processing_system7_0_150M_0
+drone_rst_processing_system7_0_100M_0
+drone_PWM_AXI_triple_5_0
+drone_axi_gpio_led_0
+drone_v_tc_0_0
+drone_ModemS2Zybo_0_0
+drone_axi_gpio_testpins_0
+drone_rst_processing_system7_0_100M1_0
+drone_v_vid_in_axi4s_0_0
+drone_PWM_AXI_triple_3_0
+drone_auto_cc_1
+drone_RC_0_0
+drone_auto_cc_0
+drone_dvi2rgb_0_0
+drone_auto_cc_2
+drone_m00_data_fifo_0
+drone_RC_1_0
+drone_axi_vdma_0_0
+drone_xlconstant_0_0
+drone_xbar_0
+drone_axi_dma_0_0
+drone_processing_system7_0_0
+drone_xlconcat_0_0
+drone_fifo_generator_0_0
+drone_R_0
+drone_B_0
+drone_xlconcat_1_0
+drone_proc_sys_reset_0_0
+drone_DVBOutputBuffer_0_0
+drone_G_0
+drone_kill_switch_0_0
+drone_axi_gpio_video_0
+drone_s00_regslice_0
+drone_PWM_AXI_triple_0_0
+drone_PWM_AXI_triple_4_0
+drone_ModemS2Control_0_0
+drone_xbar_1
+drone_s01_regslice_0
+
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 6027.492 ; gain = 186.055 ; free physical = 4508 ; free virtual = 22645
+update_compile_order -fileset sources_1
+launch_sdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk -hwspec /users/students/data/eagle4/Drone_files/Drone_Files/HW/drone/drone.sdk/drone_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 23 15:30:08 2018...
